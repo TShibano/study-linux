@@ -16,7 +16,7 @@ Linuxのプログラムには「1つの入り口と2つの出口」が存在す�
     - プログラムのエラーメッセージを書き出す先を指す．
     - ディスプレイやファイルなどに出力される．
 
-![Untitled](./images/chpater07_std_in_out_error.png)
+![Untitled](./images/chapter07_std_in_out_error.png)
 
 ## 7.2 リダイレクト
 
