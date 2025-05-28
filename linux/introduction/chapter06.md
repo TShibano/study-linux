@@ -33,7 +33,7 @@ ps <オプション>
 ps aux    # コマンドを実行したユーザのプロセスを詳細に表示
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b1cb2bc0-1e3f-4944-95a7-e2023b1618bc/3c7a644b-f69f-415e-83ca-9bbed41d1987/Untitled.png)
+![Untitled](./images/chapter06_example.png)
 
 - USER: 実行ユーザ
 - PID: プロセスID
