@@ -13,7 +13,7 @@ Dockerとは**データやプログラムを隔離する**仕組みである．�
 
 コンテナのイメージ図は下記の通りである．
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b1cb2bc0-1e3f-4944-95a7-e2023b1618bc/a3287df9-876b-4f94-a79b-0e47cff5c621/Untitled.png)
+![Docker Engineとコンテナ](./images/container_image.png)
 
 図. Docker Engineとその上にあるコンテナ
 
@@ -70,13 +70,13 @@ Dockerの根幹は「隔離できること」にある．隔離できること�
 
 物理マシンの上にLinuxOSがある．OSの上に様々なソフトウェアなどが載せられており，その内の一つがDocker Engineとなる．そしてDocker Engineから個別に分離されてコンテナが稼働している．ここで，コンテナ内には**Linuxもどき**が入っている．Linuxもどきとは，完全なLinuxではないが，Linuxのようなものだ．
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b1cb2bc0-1e3f-4944-95a7-e2023b1618bc/66b0c3a1-21ba-4078-8135-6a8b139b2462/Untitled.png)
+![host_docker](./images/host_docker.png)
 
 図. 物理マシンとLinuxOS，Docker Engineとコンテナの関係性
 
 OSは，ソフトウェアとハードウェアの中間にいてそれぞれの間を仲介してくれるものだ．そしてLinuxOSは，ざっくりと**カーネル**とそれ以外の周辺部分(シェルやデーモンなど)に分けることができる．通常のLinuxマシンとDockerコンテナの大きな違いは，カーネルを持つか持たないかだ．Dockerコンテナ内のLinuxはカーネルを持たず，周辺部分だけを持つ．ですので上記でLinuxもどきと書いた．この違いを図に表すと下のようになる．
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b1cb2bc0-1e3f-4944-95a7-e2023b1618bc/eebfe029-8975-4f89-9d52-be46c7b011dc/Untitled.png)
+![Untitled](./images/difference_with_without_docker.png)
 
 図. 左が通常のLinuxマシン，右がDockerを使ったソフトウェアとハードウェアの繋がり
 
